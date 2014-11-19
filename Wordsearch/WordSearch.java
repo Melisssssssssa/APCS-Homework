@@ -1,8 +1,6 @@
 public class WordSearch{
 
-    private char[][] board
-
-   
+    private char[][] board;
 
     public WordSearch (int r, int c){
 
@@ -27,5 +25,29 @@ public class WordSearch{
 	    for (int j=0; j< board[i].length;j++){
 		s =s +board[i][j];
 	    }
-	    s= s
+	    s= s + "\n";
+	}
+	return s;
+    }
+    public void addWordH(String w, int row, int col){
+	int r = row, c = col;
+
 	
+	for(int i=0; i<w.length(); i++){
+	    board[r][c] = w.charAt(i);
+	    c--;
+	}
+
+	
+    }
+    public static void main(String[] args){
+	WordSearch w = new WordSearch();
+	w.addWordH("hello", 3,5);
+	w.addWordH("look", 3,8);
+
+
+	System.out.println(w);
+	
+    }	
+	
+}
