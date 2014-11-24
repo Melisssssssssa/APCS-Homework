@@ -16,7 +16,7 @@ public class Driver{
 	    w.addWord(s);	
 	}
 	System.out.println(w);
-	System.out.println("good luck LOL\n");
+	System.out.println("Have fun \n");
 	w.fillBoard();
 	System.out.print(w);
     }
