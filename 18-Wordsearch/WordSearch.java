@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class WordSearch {
     private char[][] board;
+    
 
     public WordSearch(int r, int c){
 	board = new char[r][c];
